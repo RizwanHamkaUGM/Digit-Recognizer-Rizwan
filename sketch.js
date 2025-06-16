@@ -287,7 +287,6 @@ predictButton.addEventListener('click', async () => {
     } catch (error) {
         console.error('Error during prediction:', error);
         resultSpan.textContent = 'Error';
-        alert('Pastikan server Flask berjalan di http://127.0.0.1:8921/');
     } finally {
         predictButton.disabled = false;
         predictButton.textContent = 'Prediksi Angka';
