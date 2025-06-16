@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gambar Angka 0-9</h1>
+    
+    <main>
+        <canvas id="drawingCanvas"></canvas>
+        
+        <div class="button-container">
+            <button id="predictButton">Prediksi Angka</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        
+        <div class="result-container">
+            <h2 class="result-text">Prediksi:
+                <span id="result" class="result-value">...</span>
+            </h2>
+        </div>
+        
+        <div class="info">
+            💡 Tips: Gambar angka di tengah canvas dengan ukuran yang cukup besar untuk hasil terbaik
+            Creator : Rizwan 
+        </div>
+    </main>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
