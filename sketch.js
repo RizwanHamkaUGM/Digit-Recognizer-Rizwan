@@ -33,7 +33,7 @@ function setup() {
 }
 
 
-function applyBrush(col, row, intensity = 1.0) {
+function applyBrush(col, row, intensity = .45) {
     const brushSize = 2; 
 
     for (let i = -brushSize; i <= brushSize; i++) {
