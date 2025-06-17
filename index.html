@@ -6,31 +6,35 @@
     <title>Digit Recognizer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gambar Angka 0-9</h1>
-    
-    <main>
-        <canvas id="drawingCanvas"></canvas>
+    <div class="app-container">
+        <main class="drawing-container">
+            <h1>Gambar Angka 0-9</h1>
+            <canvas id="drawingCanvas"></canvas>
+            <div class="button-container">
+                <button id="predictButton">Prediksi Angka</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+            <div class="info">
+                💡 Tips: Gambar angka dengan goresan tebal di tengah canvas.
+                <br>Created By Rizwan
+            </div>
+        </main>
         
-        <div class="button-container">
-            <button id="predictButton">Prediksi Angka</button>
-            <button id="clearBtn">Clear</button>
-        </div>
-        
-        <div class="result-container">
-            <h2 class="result-text">Prediksi:
-                <span id="result" class="result-value">...</span>
-            </h2>
-        </div>
-        
-        <div class="info">
-            💡 Tips: Gambar angka di tengah canvas dengan ukuran yang cukup besar untuk hasil terbaik
-            Creator : Rizwan 
-        </div>
-    </main>
+        <aside class="output-container">
+            <div class="result-wrapper">
+                <h2 class="result-text">Prediksi:
+                    <span id="result" class="result-value">...</span>
+                </h2>
+            </div>
+            <div id="confidence-container" class="confidence-container">
+                <p class="confidence-placeholder">Hasil probabilitas akan muncul di sini setelah Anda menggambar dan menekan tombol prediksi.</p>
+            </div>
+        </aside>
+    </div>
 
     <script src="sketch.js"></script>
 </body>
