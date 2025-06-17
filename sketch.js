@@ -275,7 +275,7 @@ predictButton.addEventListener('click', async () => {
     predictButton.textContent = 'Memprediksi...';
 
     try {
-        const response = await fetch('https://flask-digit-recognizer.vercel.app/predict', {
+        const response = await fetch('https://flask-digit-recognizer-v2.vercel.app/predict', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ image_data: data }),
